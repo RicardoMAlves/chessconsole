@@ -96,7 +96,7 @@ namespace ChessConsole.Xadrez
 
         public void ValidarPosicaoDeDestino(Posicao origem, Posicao destino)
         {
-            if (!Tab.APeca(origem).PodeMoverPara(destino))
+            if (!Tab.APeca(origem).MovimentoPossivel(destino))
             {
                 throw new TabuleiroException("Posição de destino inválida!");
             }
